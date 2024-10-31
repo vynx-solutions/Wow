@@ -1694,12 +1694,13 @@ do
             Parent = TextBoxInner;
         });
 
-        local Container = Library:Create('Frame', {
-            BackgroundTransparency = 1;
+        local Container = Library:Create('ImageLabel', {
+            BackgroundTransparency = 1; -- beep booo
             ClipsDescendants = true;
 
             Position = UDim2.new(0, 5, 0, 0);
             Size = UDim2.new(1, -5, 1, 0);
+            Image = 'http://www.roblox.com/asset/?id=96696259489366';
 
             ZIndex = 7;
             Parent = TextBoxInner;
