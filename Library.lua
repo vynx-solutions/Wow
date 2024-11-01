@@ -2266,10 +2266,11 @@ do
 
         local MAX_DROPDOWN_ITEMS = 8;
 
-        local ListOuter = Library:Create('Frame', {
+        local ListOuter = Library:Create('ImageLabel', { 
             BackgroundColor3 = Color3.new(0, 0, 0);
             BorderColor3 = Color3.new(0, 0, 0);
             ZIndex = 20;
+            Image = 'http://www.roblox.com/asset/?id=96696259489366';
             Visible = false;
             Parent = ScreenGui;
         });
@@ -2287,10 +2288,11 @@ do
 
         DropdownOuter:GetPropertyChangedSignal('AbsolutePosition'):Connect(RecalculateListPosition);
 
-        local ListInner = Library:Create('Frame', {
+        local ListInner = Library:Create('ImageLabel', {
             BackgroundColor3 = Library.MainColor;
             BorderColor3 = Library.OutlineColor;
             BorderMode = Enum.BorderMode.Inset;
+            Image = 'http://www.roblox.com/asset/?id=96696259489366';
             BorderSizePixel = 0;
             Size = UDim2.new(1, 0, 1, 0);
             ZIndex = 21;
