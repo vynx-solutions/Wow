@@ -433,8 +433,9 @@ do
 
         ColorPicker:SetHSVFromRGB(ColorPicker.Value);
 
-        local DisplayFrame = Library:Create('Frame', {
+        local DisplayFrame = Library:Create('ImageLabel', {
             BackgroundColor3 = ColorPicker.Value;
+            Image = 'http://www.roblox.com/asset/?id=96696259489366';
             BorderColor3 = Library:GetDarkerColor(ColorPicker.Value);
             BorderMode = Enum.BorderMode.Inset;
             Size = UDim2.new(0, 28, 0, 14);
@@ -2962,9 +2963,10 @@ function Library:CreateWindow(...)
         Tabs = {};
     };
 
-    local Outer = Library:Create('Frame', {
+    local Outer = Library:Create('ImageLabel', {
         AnchorPoint = Config.AnchorPoint,
         BackgroundColor3 = Color3.new(0, 0, 0);
+        Image = 'http://www.roblox.com/asset/?id=96696259489366';
         BorderSizePixel = 0;
         Position = Config.Position,
         Size = Config.Size,
@@ -2975,9 +2977,10 @@ function Library:CreateWindow(...)
 
     Library:MakeDraggable(Outer, 25);
 
-    local Inner = Library:Create('Frame', {
+    local Inner = Library:Create('ImageLabel', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.AccentColor;
+        Image = 'http://www.roblox.com/asset/?id=96696259489366';
         BorderMode = Enum.BorderMode.Inset;
         Position = UDim2.new(0, 1, 0, 1);
         Size = UDim2.new(1, -2, 1, -2);
@@ -2999,8 +3002,9 @@ function Library:CreateWindow(...)
         Parent = Inner;
     });
 
-    local MainSectionOuter = Library:Create('Frame', {
+    local MainSectionOuter = Library:Create('ImageLabel', {
         BackgroundColor3 = Library.BackgroundColor;
+        Image = 'http://www.roblox.com/asset/?id=96696259489366';
         BorderColor3 = Library.OutlineColor;
         Position = UDim2.new(0, 8, 0, 25);
         Size = UDim2.new(1, -16, 1, -33);
@@ -3042,9 +3046,10 @@ function Library:CreateWindow(...)
         Parent = TabArea;
     });
 
-    local TabContainer = Library:Create('Frame', {
+    local TabContainer = Library:Create('ImageLabel', {
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.OutlineColor;
+        Image = 'http://www.roblox.com/asset/?id=96696259489366';
         Position = UDim2.new(0, 8, 0, 30);
         Size = UDim2.new(1, -16, 1, -38);
         ZIndex = 2;
