@@ -453,7 +453,7 @@ do
             Parent = DisplayFrame;
         });
 
-        -- 1/16/23
+        -- 1/16/23f
         -- Rewrote this to be placed inside the Library ScreenGui
         -- There was some issue which caused RelativeOffset to be way off
         -- Thus the color picker would never show
@@ -3017,8 +3017,9 @@ function Library:CreateWindow(...)
         BorderColor3 = 'OutlineColor';
     });
 
-    local MainSectionInner = Library:Create('Frame', {
+    local MainSectionInner = Library:Create('ImageLabel', {
         BackgroundColor3 = Library.BackgroundColor;
+        Image = 'http://www.roblox.com/asset/?id=96696259489366';
         BorderColor3 = Color3.new(0, 0, 0);
         BorderMode = Enum.BorderMode.Inset;
         Position = UDim2.new(0, 0, 0, 0);
@@ -3031,8 +3032,9 @@ function Library:CreateWindow(...)
         BackgroundColor3 = 'BackgroundColor';
     });
 
-    local TabArea = Library:Create('Frame', {
+    local TabArea = Library:Create('ImageLabel', {
         BackgroundTransparency = 1;
+        Image = 'http://www.roblox.com/asset/?id=96696259489366';
         Position = UDim2.new(0, 8, 0, 8);
         Size = UDim2.new(1, -16, 0, 21);
         ZIndex = 1;
@@ -3095,8 +3097,9 @@ function Library:CreateWindow(...)
             Parent = TabButton;
         });
 
-        local Blocker = Library:Create('Frame', {
+        local Blocker = Library:Create('ImageLabel', {
             BackgroundColor3 = Library.MainColor;
+            Image = 'http://www.roblox.com/asset/?id=96696259489366';
             BorderSizePixel = 0;
             Position = UDim2.new(0, 0, 1, 0);
             Size = UDim2.new(1, 0, 0, 1);
@@ -3109,8 +3112,9 @@ function Library:CreateWindow(...)
             BackgroundColor3 = 'MainColor';
         });
 
-        local TabFrame = Library:Create('Frame', {
+        local TabFrame = Library:Create('ImageLabel', {
             Name = 'TabFrame',
+            Image = 'http://www.roblox.com/asset/?id=96696259489366';
             BackgroundTransparency = 1;
             Position = UDim2.new(0, 0, 0, 0);
             Size = UDim2.new(1, 0, 1, 0);
